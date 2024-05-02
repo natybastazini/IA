@@ -1,16 +1,60 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <script src="../js/ia.js" defer></script>
 </head>
-<body class="bg-slate-50 h-screen flex items-center justify-center">
-    <h1 class="font-font text-rosa text-9xl">
-        ChatNaty
-    </h1>
+<body class="bg-slate-50 h-screen w-screen">
+    <header class="h-[30%] w-screen flex items-center justify-center">
+        <h1 class="font-font text-rosa text-7xl ">
+            NatalIA
+        </h1>
+    </header>
+    <main class="flex items-center justify-center flex-col gap-12">
+        <div class="flex flex-col px-72 w-screen">
+            <h2 class="font-font text-rosa text-4xl">
+                You
+            </h2>
+            <div class="flex flex-row items-center gap-2">
+                <div class="w-full h-16 bg-input rounded-md">
+                    <div class="w-full h-16 bg-input rounded-md flex items-center p-2">
+                        <input id="question" type="text" class="outline-none w-full bg-transparent">
+                    </div>
+                </div>
+                <button id="you">
+                   <img class="w-10" src="../img/pessoa.png" alt="pessoa"> 
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col px-72 w-screen">
+            <h2 class="font-font text-rosa text-4xl">
+                NatalIA
+            </h2>
+            <div class=" flex flex-col gap-4">
+                <div class="flex flex-row items-center gap-2">
+                    <div class="w-full h-16 bg-input rounded-md flex items-center p-2">
+                        <input disabled id="respotaNatalia" type="text" class="outline-none w-full bg-transparent">
+                    </div>
+                    <img class="w-10" src="../img/robo.png" alt="robo">
+                </div>
+                    
+                </div>
+                <p class="font-font text-rosa text-2xl">
+                        Tradução
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                    <div class="w-full h-16 bg-input rounded-md flex items-center p-2">
+                        <input disabled id="respotaNatalia" type="text" class="outline-none w-full bg-transparent">
+                    </div>
+                    <img class="w-10" src="../img/robo.png" alt="robo">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

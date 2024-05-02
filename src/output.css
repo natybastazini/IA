@@ -562,12 +562,20 @@ video {
   display: grid;
 }
 
-.h-12 {
-  height: 3rem;
+.contents {
+  display: contents;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-96 {
   height: 24rem;
+}
+
+.h-\[30\%\] {
+  height: 30%;
 }
 
 .h-full {
@@ -578,16 +586,16 @@ video {
   height: 100vh;
 }
 
-.h-20 {
-  height: 5rem;
+.h-\[100\%\] {
+  height: 100%;
 }
 
-.h-16 {
-  height: 4rem;
+.w-10 {
+  width: 2.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
+.w-52 {
+  width: 13rem;
 }
 
 .w-60 {
@@ -606,52 +614,40 @@ video {
   width: 100%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
-.w-52 {
-  width: 13rem;
+.w-screen {
+  width: 100vw;
 }
 
 .grid-cols-\[35vw_1fr\] {
   grid-template-columns: 35vw 1fr;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
-}
-
-.place-content-start {
-  place-content: start;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .place-self-start {
@@ -666,14 +662,19 @@ video {
   border-radius: 0.75rem;
 }
 
-.bg-orange-300 {
+.bg-input {
   --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+  background-color: rgb(255 228 228 / var(--tw-bg-opacity));
 }
 
 .bg-principal {
   --tw-bg-opacity: 1;
   background-color: rgb(245 157 200 / var(--tw-bg-opacity));
+}
+
+.bg-rosa {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 125 / var(--tw-bg-opacity));
 }
 
 .bg-slate-50 {
@@ -685,39 +686,17 @@ video {
   background-color: transparent;
 }
 
-.bg-input {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 228 228 / var(--tw-bg-opacity));
-}
-
-.bg-rosa {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 125 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-9 {
-  padding-top: 2.25rem;
+.px-72 {
+  padding-left: 18rem;
+  padding-right: 18rem;
 }
 
 .font-font {
   font-family: Katibeh, serif;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
 }
 
 .text-2xl {
@@ -730,8 +709,18 @@ video {
   line-height: 2.25rem;
 }
 
-.font-semibold {
-  font-weight: 600;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .text-rosa {
@@ -742,10 +731,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .outline-none {

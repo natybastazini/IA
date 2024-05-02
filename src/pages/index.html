@@ -1,38 +1,37 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <script src="../js/login.js" defer></script>
 </head>
 <body class="bg-slate-50 h-screen grid grid-cols-[35vw_1fr]">
     <div class="bg-principal h-full flex items-center justify-center">
-        <img class="w-60" src="./img/robo.png" alt="robozin">
+        <img class="w-60" src="../img/robo.png" alt="robozin">
     </div>
     <main class="flex items-center justify-center flex-col">
         <h1 class="font-font text-rosa text-7xl">
-            IA
+            NataliIA
         </h1>
         <div class="h-96 w-[600px] flex flex-col items-center gap-2">
             <h3 class="font-font text-rosa text-[28px] place-self-start">
                 User:
             </h3>
             <div class="bg-input rounded-md w-[100%] h-16 flex items-center p-2">
-                <input type="text" class="outline-none w-full bg-transparent">
+                <input id="email" type="text" class="outline-none w-full h-full bg-transparent">
             </div>
             <h3 class="font-font text-rosa text-[28px] place-self-start">
                 Password:
             </h3>
             <div class="bg-input rounded-md w-[100%] h-16 flex items-center p-2">
-                <input type="text" class="outline-none w-full bg-transparent">
+                <input id="senha" type="password" class="outline-none w-full h-full bg-transparent">
             </div>
-            <button class="text-white font-font text-3xl flex items-center justify-center bg-rosa w-52 h-16 rounded-xl">
-                <a href="">
+            <button class="text-white font-font text-3xl flex items-center justify-center bg-rosa w-52 h-16 rounded-xl" id="logar">
                     Entrar
-                </a>
             </button>
         </div>
         
